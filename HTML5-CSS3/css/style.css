@@ -2,7 +2,7 @@
 /* Feuille de style pour le fichier ../activiteHTML-cv.html */
 /************************************************************/
 /*** Auteur: Édouard LUMET ***/
-/***  Version: 0.1-alpha   ***/
+/***     Version: 1.0      ***/
 
 /* Polices personnalisées */
 @font-face
@@ -29,5 +29,81 @@
 /* Corps de la page */
 body
 {
-	background-image: url('../img/cv-background.jpg') fixed;
+	font-family: 'Ubuntu Mono';
+	font-size: 16px;
+}
+
+/* Centrage (convention) */
+div#wrapper
+{
+	width:610px;
+	margin: 0 auto;
+	background: url('../img/cv_background.jpg') repeat scroll;
+	padding: 10px;
+}
+
+/* Titre principal */
+h1
+{
+	font-family: 'Ubuntu';
+	font-size: 30px;
+	text-align: center;
+}
+
+/* Sous-titre d'en-tête */
+h1 + p
+{
+	font-family: 'Ubuntu Light';
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 25px;
+	text-shadow: 4px 4px 2px gray;
+}
+
+/* Photo */
+img
+{
+	float: right;
+	margin-left: 10px;
+	margin-top: -25px;
+	border: 1px dashed black;
+	border-radius: 4px;
+}
+
+/* Titres de partie */
+h2
+{
+	font-family: 'Ubuntu';
+	font-size: 26px;
+}
+
+/* Paragraphes de partie */
+h2 + p, h2 + ul li p 
+{
+	font-size: 16px;
+}
+
+/* Premier paragraphe de partie */
+.justify
+{
+	text-align: justify;
+}
+
+/* Listes */
+ul
+{
+	list-style-type: square;
+}
+
+/* Liens */
+a:link, a:active, a:visited
+{
+	text-decoration: none;
+	color: forestgreen;
+}
+a:hover
+{
+	text-decoration: none;
+	color: darkolivegreen;
 }
