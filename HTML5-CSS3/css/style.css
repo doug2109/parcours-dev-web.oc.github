@@ -2,7 +2,7 @@
 /* Feuille de style pour le fichier ../activiteHTML-cv.html */
 /************************************************************/
 /*** Auteur: Édouard LUMET ***/
-/***     Version: 1.0      ***/
+/***     Version: 2.0      ***/
 
 /* Polices personnalisées */
 @font-face
@@ -106,4 +106,10 @@ a:hover
 {
 	text-decoration: none;
 	color: darkolivegreen;
+}
+
+/* Liséré */
+img#lisere
+{
+	
 }
