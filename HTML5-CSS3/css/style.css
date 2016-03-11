@@ -2,7 +2,7 @@
 /* Feuille de style pour le fichier ../activiteHTML-cv.html */
 /************************************************************/
 /*** Auteur: Édouard LUMET ***/
-/***     Version: 2.0      ***/
+/***     Version: 3.0      ***/
 
 /* Polices personnalisées */
 @font-face
@@ -29,6 +29,7 @@
 /* Corps de la page */
 body
 {
+	width: 100%;
 	font-family: 'Ubuntu Mono';
 	font-size: 16px;
 }
@@ -36,10 +37,10 @@ body
 /* Centrage (convention) */
 div#wrapper
 {
-	width:610px;
-	margin: 0 auto;
-	background: url('../img/cv_background.jpg') repeat scroll;
-	padding: 10px;
+	height: 470px;
+/*	margin: 0 auto; */
+	background: url('../img/cv_background.jpg') repeat;
+	padding: 15px 5px 15px 125px;
 }
 
 /* Titre principal */
@@ -62,13 +63,39 @@ h1 + p
 }
 
 /* Photo */
-img
-{
-	float: right;
-	margin-left: 10px;
-	margin-top: -25px;
+a img
+{	
+	position: absolute;
+	top: 305px;
+	left: 130px;
 	border: 1px dashed black;
 	border-radius: 4px;
+}
+
+/* Section contenant les infos CV */
+main
+{
+	display: flex;
+	justify-content: space-around;
+}
+article:nth-child(1)
+{
+	order: 3;
+}
+article:nth-child(2)
+{
+	order: 2;
+}
+article:nth-child(3)
+{
+	order: 1;
+}
+
+/* Articles */
+article
+{
+	width: 33%;
+	text-align: center;
 }
 
 /* Titres de partie */
@@ -84,16 +111,12 @@ h2 + p, h2 + ul li p
 	font-size: 16px;
 }
 
-/* Premier paragraphe de partie */
-.justify
-{
-	text-align: justify;
-}
-
 /* Listes */
 ul
 {
-	list-style-type: square;
+	list-style-type: none;
+	width: 100%;
+	padding-left: 0px;
 }
 
 /* Liens */
@@ -111,5 +134,7 @@ a:hover
 /* Liséré */
 img#lisere
 {
-	
+	position: absolute;
+	width: 120px;
+	height: 500px;	
 }
